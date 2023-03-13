@@ -1,0 +1,27 @@
+*{
+    font-size: 20;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ejercicio
+{
+    width: 40%;
+    height: 30%;
+    background-color: aquamarine;
+    border-radius: 15px;
+    border: 2px solid cornflowerblue;
+    color: blue;
+    align-content: center;
+}
+
+.tema{
+    text-align: center;
+}
+
+.respuesta{
+    width: 40%;
+    height: 30%;
+    align-content: center;
+    margin-left: 5%;
+    padding-top: 20px;
+}
