@@ -30,3 +30,14 @@
     text-align: center;
     margin-left: -10%;
 }
+
+.tabla
+{
+    border: 2px solid orangered;
+    align-content: center;
+    margin-left: 30%;
+}
+
+td {
+    border: 2px solid orangered;
+}

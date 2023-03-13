@@ -1,5 +1,10 @@
 import main from './js/main.js'
+let salarioTotal =0;
+for (let x = 1; x <= 3; x++){
+    let nombre = prompt("Ingrese el nombre del obrero");
+    let qtahrs = prompt("Ingrese la cantidad de horas trabajadas");
 
-let num1 = prompt("Ingrese el número 1");
-let num2 = prompt("Ingrese el número 2");
-main.setValue(num1, num2);
+    salarioTotal +=  main.setValue(nombre, qtahrs);
+    
+}
+main.lastRow(salarioTotal);

@@ -1,13 +1,28 @@
 export default {
     el: document.querySelector("#nombre"),
+    tabla: document.querySelector("#tabla"),
     value(){
         //return this.el.innerHTML;
     },
-    setValue(num1, num2){
+    setValue(nombre, qtahrs){
+        let valorHr=30000;
+        let NominaObrero=valorHr*qtahrs;
 
-        let minimo = Math.min(num1, num2);
-        let maximo = Math.max(num1, num2);
+        this.tabla.insertAdjacentHTML("beforeend", `
+            <tr>
+                <td>${nombre}</td>
+                <td>${qtahrs}</td>
+                <td>${NominaObrero}</td>
+            </tr>`);
 
-        this.el.insertAdjacentText("beforeend", `${minimo} , ${maximo}`);
+        return NominaObrero;
     },
+    lastRow(salarioTotal)
+    {
+        this.tabla.insertAdjacentHTML("beforeend", `
+            <tr>
+                <td colspan=2>NOMINA TOTAL</td>
+                <td>${salarioTotal}</td>
+            </tr>`);
+    }
 }
