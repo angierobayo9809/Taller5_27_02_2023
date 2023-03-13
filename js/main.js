@@ -3,14 +3,9 @@ export default {
     value(){
         return this.el.innerHTML;
     },
-    setValue(){
-        let respuesta="";
-        let suma=0;
-        for(let x = 1; x <=10; x++){
-            respuesta += x +" + ";
-            suma +=x;
-        }
-
-        this.el.insertAdjacentText("beforeend", ` ${respuesta.substring(0,respuesta.length-2) +" = "+suma}`);
+    setValue(CATa,CATb){
+        let hipotenusa=0;
+        hipotenusa = Math.sqrt(Number(CATa)) +Math.sqrt(Number(CATb))
+        this.el.insertAdjacentText("beforeend", `La Hipotenusa es de ${hipotenusa.toFixed(2)}`);
     },
 }
